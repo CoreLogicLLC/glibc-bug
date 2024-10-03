@@ -28,7 +28,7 @@ def hello(event, context):
         print("Stack trace : %s" %stack_trace)
         
         
-        return {"statusCode": 200, "body": json.dumps({"message": ex_value, "trace": stack_trace})}
+        return {"statusCode": 200, "body": json.dumps({"message": str(ex_value), "trace": stack_trace})}
     
 
     return {"statusCode": 200, "body": json.dumps(body)}
