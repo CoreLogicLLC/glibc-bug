@@ -10,7 +10,7 @@ def hello(event, context):
     
     try:
         import lxml.etree as etree
-    except as e:
+    except Exception as e:
         return {"statusCode": 200, "body": e.message}
     
 
