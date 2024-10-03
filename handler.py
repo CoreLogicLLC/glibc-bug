@@ -1,5 +1,6 @@
 import json
 
+import lxml
 
 def hello(event, context):
     body = {
