@@ -1,0 +1,4 @@
+before_compile:
+  - echo "export LANG='en_US.UTF-8'" >> $BASH_ENV  - n auto
+  - curl -sL https://sentry.io/get-cli/ | bash
+  - python3 -m pip install pipenv

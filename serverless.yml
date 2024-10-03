@@ -9,3 +9,14 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http:
+          method: GET
+          path: letscrash
+ 
+custom:
+  pythonRequirements:
+    dockerizePip: true
+
+plugins:
+  - serverless-python-requirements
