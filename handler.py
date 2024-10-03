@@ -1,6 +1,6 @@
 import json
 import sys
-
+import traceback
 
 
 def hello(event, context):

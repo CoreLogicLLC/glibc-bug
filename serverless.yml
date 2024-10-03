@@ -19,7 +19,7 @@ functions:
  
 custom:
   pythonRequirements:
-    dockerizePip: true
+    dockerImage: public.ecr.aws/sam/build-python3.11:latest-x86_64
 
 plugins:
   - serverless-python-requirements
