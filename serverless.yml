@@ -6,6 +6,9 @@ provider:
   name: aws
   runtime: python3.11
 
+  deploymentBucket:
+    name: ${ssm:/infra/buckets/Deploy}
+
 functions:
   hello:
     handler: handler.hello
