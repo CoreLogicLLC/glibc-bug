@@ -1,6 +1,6 @@
 import json
 
-import lxml
+import lxml.etree as etree
 
 def hello(event, context):
     body = {
