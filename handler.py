@@ -11,7 +11,7 @@ def hello(event, context):
     try:
         import lxml.etree as etree
     except Exception as e:
-        return {"statusCode": 200, "body": e.message}
+        return {"statusCode": 200, "body": e}
     
 
     return {"statusCode": 200, "body": json.dumps(body)}
